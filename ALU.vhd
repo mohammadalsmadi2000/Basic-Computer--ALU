@@ -1,0 +1,103 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use work.CP.all;
+
+
+entity ALU is
+	port(A, B: in std_logic_vector(15 downto 0);
+		 ALU_OP: in std_logic_vector(2 downto 0);
+		 result: out std_logic_vector(15 downto 0);
+		 zero, overFlow, carry: out std_logic);
+end ALU;
+	
+	
+architecture ALU of ALU is
+
+signal RDecrement_A: std_logic_vector(15 downto 0);
+signal CDecrement_A, OverflowDecrement_A, ZeroDecrement_A: std_logic;
+
+signal RSubtraction: std_logic_vector(15 downto 0);
+signal CSubtraction, OverflowSubtraction, ZeroSubtraction: std_logic;
+
+signal SRightA, SLeftA: std_logic_vector(15 downto 0);
+
+signal RAdding: std_logic_vector(15 downto 0);
+signal CAdding, OverflowAdding, ZeroAdding: std_logic;
+
+signal xrOut: std_logic_vector(15 downto 0);
+
+signal COut: std_logic_vector(15 downto 0);
+
+signal RIncreamentA: std_logic_vector(15 downto 0);
+signal CIncreamentA, OverflowIncreamentA, ZeroIncreamentA: std_logic;
+
+signal muxOut: std_logic_vector(15 downto 0);
+signal muxIn: inputOfmux;
+begin
+	
+	A1: nBitAdder port map(A, x"ffff", '0', RDecrement_A, CDecrement_A, OverflowDecrement_A, ZeroDecrement_A);
+	
+	
+	A2: nBitAdder port map(A, (not(B) + '1'), '0', RSubtraction, CSubtraction, OverflowSubtraction, ZeroSubtraction);
+	
+	
+	A3: SL port map(A, SLeftA);
+	
+	
+	A4: SR port map(A, SRightA);
+	
+	
+	A5: nBitAdder port map(A, B, '0', RAdding, CAdding, OverflowAdding, ZeroAdding);
+	
+	
+	A6: XR port map(A, B, xrOut);
+	
+	
+	A7: C port map(A, COut);
+	
+	
+	A8: nBitAdder port map(A, "0000000000000001", '0', RIncreamentA, CIncreamentA, OverflowIncreamentA, ZeroIncreamentA);
+
+	
+	muxIn(0) <= RDecrement_A;
+	muxIn(1) <= RSubtraction;
+	muxIn(2) <= SRightA;
+	muxIn(3) <= SLeftA;
+	muxIn(4) <= RAdding;
+	muxIn(5) <= xrOut;
+	muxIn(6) <=COut;
+	muxIn(7) <= RIncreamentA;
+	
+	
+	A9: MP port map(muxIn, ALU_OP, muxOut);
+	result <= muxOut;
+	
+	process(ALU_OP)
+	begin
+		if(ALU_OP = "000")then
+			carry <= CDecrement_A;
+			overFlow <= OverflowDecrement_A;
+			zero <= ZeroDecrement_A;
+		elsif(ALU_OP = "001")then
+			carry <= CSubtraction;
+			overFlow <= OverflowSubtraction;
+			zero <= ZeroSubtraction;
+		elsif(ALU_OP = "100")then
+			carry <= CAdding;
+			overFlow <= OverflowAdding;
+			zero <= ZeroAdding;
+		elsif(ALU_OP = "111")then
+			carry <= CIncreamentA;
+			overFlow <= OverflowIncreamentA;
+			zero <= ZeroIncreamentA;
+		else
+		--Zero (Z flag)
+			carry <= 'Z';
+			overFlow <= 'Z';
+			zero <= 'Z';
+		end if;
+	end process;
+end ALU;
+	
+	

@@ -1,0 +1,688 @@
+Simulator report for task7
+Sun Aug 07 16:06:46 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 497 nodes    ;
+; Simulation Coverage         ;      93.56 % ;
+; Total Number of Transitions ; 68667        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Functional   ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; taskNew7.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; Off          ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      93.56 % ;
+; Total nodes checked                                 ; 497          ;
+; Total output ports checked                          ; 497          ;
+; Total output ports with complete 1/0-value coverage ; 465          ;
+; Total output ports with no 1/0-value coverage       ; 30           ;
+; Total output ports with no 1-value coverage         ; 32           ;
+; Total output ports with no 0-value coverage         ; 30           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                    ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |ALU|zero~1                                  ; |ALU|zero~1                                  ; out0             ;
+; |ALU|carry~0                                 ; |ALU|carry~0                                 ; out              ;
+; |ALU|overFlow~0                              ; |ALU|overFlow~0                              ; out              ;
+; |ALU|zero~3                                  ; |ALU|zero~3                                  ; out0             ;
+; |ALU|zero~5                                  ; |ALU|zero~5                                  ; out0             ;
+; |ALU|overFlow~1                              ; |ALU|overFlow~1                              ; out              ;
+; |ALU|overFlow~2                              ; |ALU|overFlow~2                              ; out              ;
+; |ALU|overFlow~3                              ; |ALU|overFlow~3                              ; out              ;
+; |ALU|carry~1                                 ; |ALU|carry~1                                 ; out              ;
+; |ALU|carry~2                                 ; |ALU|carry~2                                 ; out              ;
+; |ALU|carry~3                                 ; |ALU|carry~3                                 ; out              ;
+; |ALU|A[0]                                    ; |ALU|A[0]                                    ; out              ;
+; |ALU|A[1]                                    ; |ALU|A[1]                                    ; out              ;
+; |ALU|A[2]                                    ; |ALU|A[2]                                    ; out              ;
+; |ALU|A[3]                                    ; |ALU|A[3]                                    ; out              ;
+; |ALU|A[4]                                    ; |ALU|A[4]                                    ; out              ;
+; |ALU|A[5]                                    ; |ALU|A[5]                                    ; out              ;
+; |ALU|A[6]                                    ; |ALU|A[6]                                    ; out              ;
+; |ALU|A[7]                                    ; |ALU|A[7]                                    ; out              ;
+; |ALU|A[8]                                    ; |ALU|A[8]                                    ; out              ;
+; |ALU|A[9]                                    ; |ALU|A[9]                                    ; out              ;
+; |ALU|A[10]                                   ; |ALU|A[10]                                   ; out              ;
+; |ALU|A[11]                                   ; |ALU|A[11]                                   ; out              ;
+; |ALU|A[12]                                   ; |ALU|A[12]                                   ; out              ;
+; |ALU|A[13]                                   ; |ALU|A[13]                                   ; out              ;
+; |ALU|A[14]                                   ; |ALU|A[14]                                   ; out              ;
+; |ALU|A[15]                                   ; |ALU|A[15]                                   ; out              ;
+; |ALU|B[0]                                    ; |ALU|B[0]                                    ; out              ;
+; |ALU|B[1]                                    ; |ALU|B[1]                                    ; out              ;
+; |ALU|B[2]                                    ; |ALU|B[2]                                    ; out              ;
+; |ALU|B[3]                                    ; |ALU|B[3]                                    ; out              ;
+; |ALU|B[4]                                    ; |ALU|B[4]                                    ; out              ;
+; |ALU|B[5]                                    ; |ALU|B[5]                                    ; out              ;
+; |ALU|B[6]                                    ; |ALU|B[6]                                    ; out              ;
+; |ALU|B[7]                                    ; |ALU|B[7]                                    ; out              ;
+; |ALU|B[8]                                    ; |ALU|B[8]                                    ; out              ;
+; |ALU|B[9]                                    ; |ALU|B[9]                                    ; out              ;
+; |ALU|B[10]                                   ; |ALU|B[10]                                   ; out              ;
+; |ALU|B[11]                                   ; |ALU|B[11]                                   ; out              ;
+; |ALU|B[12]                                   ; |ALU|B[12]                                   ; out              ;
+; |ALU|B[13]                                   ; |ALU|B[13]                                   ; out              ;
+; |ALU|B[14]                                   ; |ALU|B[14]                                   ; out              ;
+; |ALU|B[15]                                   ; |ALU|B[15]                                   ; out              ;
+; |ALU|ALU_OP[0]                               ; |ALU|ALU_OP[0]                               ; out              ;
+; |ALU|ALU_OP[1]                               ; |ALU|ALU_OP[1]                               ; out              ;
+; |ALU|ALU_OP[2]                               ; |ALU|ALU_OP[2]                               ; out              ;
+; |ALU|result[0]                               ; |ALU|result[0]                               ; pin_out          ;
+; |ALU|result[1]                               ; |ALU|result[1]                               ; pin_out          ;
+; |ALU|result[2]                               ; |ALU|result[2]                               ; pin_out          ;
+; |ALU|result[3]                               ; |ALU|result[3]                               ; pin_out          ;
+; |ALU|result[4]                               ; |ALU|result[4]                               ; pin_out          ;
+; |ALU|result[5]                               ; |ALU|result[5]                               ; pin_out          ;
+; |ALU|result[6]                               ; |ALU|result[6]                               ; pin_out          ;
+; |ALU|result[7]                               ; |ALU|result[7]                               ; pin_out          ;
+; |ALU|result[8]                               ; |ALU|result[8]                               ; pin_out          ;
+; |ALU|result[9]                               ; |ALU|result[9]                               ; pin_out          ;
+; |ALU|result[10]                              ; |ALU|result[10]                              ; pin_out          ;
+; |ALU|result[11]                              ; |ALU|result[11]                              ; pin_out          ;
+; |ALU|result[12]                              ; |ALU|result[12]                              ; pin_out          ;
+; |ALU|result[13]                              ; |ALU|result[13]                              ; pin_out          ;
+; |ALU|result[14]                              ; |ALU|result[14]                              ; pin_out          ;
+; |ALU|result[15]                              ; |ALU|result[15]                              ; pin_out          ;
+; |ALU|overFlow                                ; |ALU|overFlow                                ; pin_out          ;
+; |ALU|carry                                   ; |ALU|carry                                   ; pin_out          ;
+; |ALU|MP:A9|output[0]~0                       ; |ALU|MP:A9|output[0]~0                       ; out              ;
+; |ALU|MP:A9|output[0]~1                       ; |ALU|MP:A9|output[0]~1                       ; out              ;
+; |ALU|MP:A9|output[0]~2                       ; |ALU|MP:A9|output[0]~2                       ; out              ;
+; |ALU|MP:A9|output[0]~3                       ; |ALU|MP:A9|output[0]~3                       ; out              ;
+; |ALU|MP:A9|output[0]                         ; |ALU|MP:A9|output[0]                         ; out              ;
+; |ALU|MP:A9|output[15]~5                      ; |ALU|MP:A9|output[15]~5                      ; out              ;
+; |ALU|MP:A9|output[14]~6                      ; |ALU|MP:A9|output[14]~6                      ; out              ;
+; |ALU|MP:A9|output[13]~7                      ; |ALU|MP:A9|output[13]~7                      ; out              ;
+; |ALU|MP:A9|output[12]~8                      ; |ALU|MP:A9|output[12]~8                      ; out              ;
+; |ALU|MP:A9|output[11]~9                      ; |ALU|MP:A9|output[11]~9                      ; out              ;
+; |ALU|MP:A9|output[10]~10                     ; |ALU|MP:A9|output[10]~10                     ; out              ;
+; |ALU|MP:A9|output[9]~11                      ; |ALU|MP:A9|output[9]~11                      ; out              ;
+; |ALU|MP:A9|output[8]~12                      ; |ALU|MP:A9|output[8]~12                      ; out              ;
+; |ALU|MP:A9|output[7]~13                      ; |ALU|MP:A9|output[7]~13                      ; out              ;
+; |ALU|MP:A9|output[6]~14                      ; |ALU|MP:A9|output[6]~14                      ; out              ;
+; |ALU|MP:A9|output[5]~15                      ; |ALU|MP:A9|output[5]~15                      ; out              ;
+; |ALU|MP:A9|output[4]~16                      ; |ALU|MP:A9|output[4]~16                      ; out              ;
+; |ALU|MP:A9|output[3]~17                      ; |ALU|MP:A9|output[3]~17                      ; out              ;
+; |ALU|MP:A9|output[2]~18                      ; |ALU|MP:A9|output[2]~18                      ; out              ;
+; |ALU|MP:A9|output[1]~19                      ; |ALU|MP:A9|output[1]~19                      ; out              ;
+; |ALU|MP:A9|output[15]~20                     ; |ALU|MP:A9|output[15]~20                     ; out0             ;
+; |ALU|MP:A9|output[15]~21                     ; |ALU|MP:A9|output[15]~21                     ; out              ;
+; |ALU|MP:A9|output[14]~22                     ; |ALU|MP:A9|output[14]~22                     ; out              ;
+; |ALU|MP:A9|output[13]~23                     ; |ALU|MP:A9|output[13]~23                     ; out              ;
+; |ALU|MP:A9|output[12]~24                     ; |ALU|MP:A9|output[12]~24                     ; out              ;
+; |ALU|MP:A9|output[11]~25                     ; |ALU|MP:A9|output[11]~25                     ; out              ;
+; |ALU|MP:A9|output[10]~26                     ; |ALU|MP:A9|output[10]~26                     ; out              ;
+; |ALU|MP:A9|output[9]~27                      ; |ALU|MP:A9|output[9]~27                      ; out              ;
+; |ALU|MP:A9|output[8]~28                      ; |ALU|MP:A9|output[8]~28                      ; out              ;
+; |ALU|MP:A9|output[7]~29                      ; |ALU|MP:A9|output[7]~29                      ; out              ;
+; |ALU|MP:A9|output[6]~30                      ; |ALU|MP:A9|output[6]~30                      ; out              ;
+; |ALU|MP:A9|output[5]~31                      ; |ALU|MP:A9|output[5]~31                      ; out              ;
+; |ALU|MP:A9|output[4]~32                      ; |ALU|MP:A9|output[4]~32                      ; out              ;
+; |ALU|MP:A9|output[3]~33                      ; |ALU|MP:A9|output[3]~33                      ; out              ;
+; |ALU|MP:A9|output[2]~34                      ; |ALU|MP:A9|output[2]~34                      ; out              ;
+; |ALU|MP:A9|output[1]~35                      ; |ALU|MP:A9|output[1]~35                      ; out              ;
+; |ALU|MP:A9|output[15]~36                     ; |ALU|MP:A9|output[15]~36                     ; out0             ;
+; |ALU|MP:A9|output[0]~37                      ; |ALU|MP:A9|output[0]~37                      ; out              ;
+; |ALU|MP:A9|output[0]~38                      ; |ALU|MP:A9|output[0]~38                      ; out              ;
+; |ALU|MP:A9|output[1]                         ; |ALU|MP:A9|output[1]                         ; out              ;
+; |ALU|MP:A9|output[1]~39                      ; |ALU|MP:A9|output[1]~39                      ; out              ;
+; |ALU|MP:A9|output[1]~40                      ; |ALU|MP:A9|output[1]~40                      ; out              ;
+; |ALU|MP:A9|output[1]~41                      ; |ALU|MP:A9|output[1]~41                      ; out              ;
+; |ALU|MP:A9|output[1]~42                      ; |ALU|MP:A9|output[1]~42                      ; out              ;
+; |ALU|MP:A9|output[1]~43                      ; |ALU|MP:A9|output[1]~43                      ; out              ;
+; |ALU|MP:A9|output[2]                         ; |ALU|MP:A9|output[2]                         ; out              ;
+; |ALU|MP:A9|output[2]~44                      ; |ALU|MP:A9|output[2]~44                      ; out              ;
+; |ALU|MP:A9|output[2]~45                      ; |ALU|MP:A9|output[2]~45                      ; out              ;
+; |ALU|MP:A9|output[2]~46                      ; |ALU|MP:A9|output[2]~46                      ; out              ;
+; |ALU|MP:A9|output[2]~47                      ; |ALU|MP:A9|output[2]~47                      ; out              ;
+; |ALU|MP:A9|output[2]~48                      ; |ALU|MP:A9|output[2]~48                      ; out              ;
+; |ALU|MP:A9|output[3]                         ; |ALU|MP:A9|output[3]                         ; out              ;
+; |ALU|MP:A9|output[3]~49                      ; |ALU|MP:A9|output[3]~49                      ; out              ;
+; |ALU|MP:A9|output[3]~50                      ; |ALU|MP:A9|output[3]~50                      ; out              ;
+; |ALU|MP:A9|output[3]~51                      ; |ALU|MP:A9|output[3]~51                      ; out              ;
+; |ALU|MP:A9|output[3]~52                      ; |ALU|MP:A9|output[3]~52                      ; out              ;
+; |ALU|MP:A9|output[3]~53                      ; |ALU|MP:A9|output[3]~53                      ; out              ;
+; |ALU|MP:A9|output[4]                         ; |ALU|MP:A9|output[4]                         ; out              ;
+; |ALU|MP:A9|output[4]~54                      ; |ALU|MP:A9|output[4]~54                      ; out              ;
+; |ALU|MP:A9|output[4]~55                      ; |ALU|MP:A9|output[4]~55                      ; out              ;
+; |ALU|MP:A9|output[4]~56                      ; |ALU|MP:A9|output[4]~56                      ; out              ;
+; |ALU|MP:A9|output[4]~57                      ; |ALU|MP:A9|output[4]~57                      ; out              ;
+; |ALU|MP:A9|output[4]~58                      ; |ALU|MP:A9|output[4]~58                      ; out              ;
+; |ALU|MP:A9|output[5]                         ; |ALU|MP:A9|output[5]                         ; out              ;
+; |ALU|MP:A9|output[5]~59                      ; |ALU|MP:A9|output[5]~59                      ; out              ;
+; |ALU|MP:A9|output[5]~60                      ; |ALU|MP:A9|output[5]~60                      ; out              ;
+; |ALU|MP:A9|output[5]~61                      ; |ALU|MP:A9|output[5]~61                      ; out              ;
+; |ALU|MP:A9|output[5]~62                      ; |ALU|MP:A9|output[5]~62                      ; out              ;
+; |ALU|MP:A9|output[5]~63                      ; |ALU|MP:A9|output[5]~63                      ; out              ;
+; |ALU|MP:A9|output[6]                         ; |ALU|MP:A9|output[6]                         ; out              ;
+; |ALU|MP:A9|output[6]~64                      ; |ALU|MP:A9|output[6]~64                      ; out              ;
+; |ALU|MP:A9|output[6]~65                      ; |ALU|MP:A9|output[6]~65                      ; out              ;
+; |ALU|MP:A9|output[6]~66                      ; |ALU|MP:A9|output[6]~66                      ; out              ;
+; |ALU|MP:A9|output[6]~67                      ; |ALU|MP:A9|output[6]~67                      ; out              ;
+; |ALU|MP:A9|output[6]~68                      ; |ALU|MP:A9|output[6]~68                      ; out              ;
+; |ALU|MP:A9|output[7]                         ; |ALU|MP:A9|output[7]                         ; out              ;
+; |ALU|MP:A9|output[7]~69                      ; |ALU|MP:A9|output[7]~69                      ; out              ;
+; |ALU|MP:A9|output[7]~70                      ; |ALU|MP:A9|output[7]~70                      ; out              ;
+; |ALU|MP:A9|output[7]~71                      ; |ALU|MP:A9|output[7]~71                      ; out              ;
+; |ALU|MP:A9|output[7]~72                      ; |ALU|MP:A9|output[7]~72                      ; out              ;
+; |ALU|MP:A9|output[7]~73                      ; |ALU|MP:A9|output[7]~73                      ; out              ;
+; |ALU|MP:A9|output[8]                         ; |ALU|MP:A9|output[8]                         ; out              ;
+; |ALU|MP:A9|output[8]~74                      ; |ALU|MP:A9|output[8]~74                      ; out              ;
+; |ALU|MP:A9|output[8]~75                      ; |ALU|MP:A9|output[8]~75                      ; out              ;
+; |ALU|MP:A9|output[8]~76                      ; |ALU|MP:A9|output[8]~76                      ; out              ;
+; |ALU|MP:A9|output[8]~77                      ; |ALU|MP:A9|output[8]~77                      ; out              ;
+; |ALU|MP:A9|output[8]~78                      ; |ALU|MP:A9|output[8]~78                      ; out              ;
+; |ALU|MP:A9|output[9]                         ; |ALU|MP:A9|output[9]                         ; out              ;
+; |ALU|MP:A9|output[9]~79                      ; |ALU|MP:A9|output[9]~79                      ; out              ;
+; |ALU|MP:A9|output[9]~80                      ; |ALU|MP:A9|output[9]~80                      ; out              ;
+; |ALU|MP:A9|output[9]~81                      ; |ALU|MP:A9|output[9]~81                      ; out              ;
+; |ALU|MP:A9|output[9]~82                      ; |ALU|MP:A9|output[9]~82                      ; out              ;
+; |ALU|MP:A9|output[9]~83                      ; |ALU|MP:A9|output[9]~83                      ; out              ;
+; |ALU|MP:A9|output[10]                        ; |ALU|MP:A9|output[10]                        ; out              ;
+; |ALU|MP:A9|output[10]~84                     ; |ALU|MP:A9|output[10]~84                     ; out              ;
+; |ALU|MP:A9|output[10]~85                     ; |ALU|MP:A9|output[10]~85                     ; out              ;
+; |ALU|MP:A9|output[10]~86                     ; |ALU|MP:A9|output[10]~86                     ; out              ;
+; |ALU|MP:A9|output[10]~87                     ; |ALU|MP:A9|output[10]~87                     ; out              ;
+; |ALU|MP:A9|output[10]~88                     ; |ALU|MP:A9|output[10]~88                     ; out              ;
+; |ALU|MP:A9|output[11]                        ; |ALU|MP:A9|output[11]                        ; out              ;
+; |ALU|MP:A9|output[11]~89                     ; |ALU|MP:A9|output[11]~89                     ; out              ;
+; |ALU|MP:A9|output[11]~90                     ; |ALU|MP:A9|output[11]~90                     ; out              ;
+; |ALU|MP:A9|output[11]~91                     ; |ALU|MP:A9|output[11]~91                     ; out              ;
+; |ALU|MP:A9|output[11]~92                     ; |ALU|MP:A9|output[11]~92                     ; out              ;
+; |ALU|MP:A9|output[11]~93                     ; |ALU|MP:A9|output[11]~93                     ; out              ;
+; |ALU|MP:A9|output[12]                        ; |ALU|MP:A9|output[12]                        ; out              ;
+; |ALU|MP:A9|output[12]~94                     ; |ALU|MP:A9|output[12]~94                     ; out              ;
+; |ALU|MP:A9|output[12]~95                     ; |ALU|MP:A9|output[12]~95                     ; out              ;
+; |ALU|MP:A9|output[12]~96                     ; |ALU|MP:A9|output[12]~96                     ; out              ;
+; |ALU|MP:A9|output[12]~97                     ; |ALU|MP:A9|output[12]~97                     ; out              ;
+; |ALU|MP:A9|output[12]~98                     ; |ALU|MP:A9|output[12]~98                     ; out              ;
+; |ALU|MP:A9|output[13]                        ; |ALU|MP:A9|output[13]                        ; out              ;
+; |ALU|MP:A9|output[13]~99                     ; |ALU|MP:A9|output[13]~99                     ; out              ;
+; |ALU|MP:A9|output[13]~100                    ; |ALU|MP:A9|output[13]~100                    ; out              ;
+; |ALU|MP:A9|output[13]~101                    ; |ALU|MP:A9|output[13]~101                    ; out              ;
+; |ALU|MP:A9|output[13]~102                    ; |ALU|MP:A9|output[13]~102                    ; out              ;
+; |ALU|MP:A9|output[13]~103                    ; |ALU|MP:A9|output[13]~103                    ; out              ;
+; |ALU|MP:A9|output[14]                        ; |ALU|MP:A9|output[14]                        ; out              ;
+; |ALU|MP:A9|output[14]~104                    ; |ALU|MP:A9|output[14]~104                    ; out              ;
+; |ALU|MP:A9|output[14]~105                    ; |ALU|MP:A9|output[14]~105                    ; out              ;
+; |ALU|MP:A9|output[14]~106                    ; |ALU|MP:A9|output[14]~106                    ; out              ;
+; |ALU|MP:A9|output[14]~107                    ; |ALU|MP:A9|output[14]~107                    ; out              ;
+; |ALU|MP:A9|output[14]~108                    ; |ALU|MP:A9|output[14]~108                    ; out              ;
+; |ALU|MP:A9|output[15]                        ; |ALU|MP:A9|output[15]                        ; out              ;
+; |ALU|MP:A9|output[15]~109                    ; |ALU|MP:A9|output[15]~109                    ; out              ;
+; |ALU|MP:A9|output[15]~110                    ; |ALU|MP:A9|output[15]~110                    ; out0             ;
+; |ALU|MP:A9|output[15]~111                    ; |ALU|MP:A9|output[15]~111                    ; out              ;
+; |ALU|MP:A9|output[15]~112                    ; |ALU|MP:A9|output[15]~112                    ; out0             ;
+; |ALU|MP:A9|output[15]~113                    ; |ALU|MP:A9|output[15]~113                    ; out              ;
+; |ALU|MP:A9|output[15]~114                    ; |ALU|MP:A9|output[15]~114                    ; out0             ;
+; |ALU|MP:A9|output[15]~115                    ; |ALU|MP:A9|output[15]~115                    ; out              ;
+; |ALU|MP:A9|output[15]~116                    ; |ALU|MP:A9|output[15]~116                    ; out0             ;
+; |ALU|MP:A9|output[15]~117                    ; |ALU|MP:A9|output[15]~117                    ; out              ;
+; |ALU|MP:A9|output[15]~118                    ; |ALU|MP:A9|output[15]~118                    ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd16|sum    ; |ALU|nBitAdder:A8|fullAdder:fullAdd16|sum    ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd15|sum    ; |ALU|nBitAdder:A8|fullAdder:fullAdd15|sum    ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd14|sum    ; |ALU|nBitAdder:A8|fullAdder:fullAdd14|sum    ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd13|sum    ; |ALU|nBitAdder:A8|fullAdder:fullAdd13|sum    ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd12|sum    ; |ALU|nBitAdder:A8|fullAdder:fullAdd12|sum    ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd11|sum    ; |ALU|nBitAdder:A8|fullAdder:fullAdd11|sum    ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd10|sum    ; |ALU|nBitAdder:A8|fullAdder:fullAdd10|sum    ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd9|sum     ; |ALU|nBitAdder:A8|fullAdder:fullAdd9|sum     ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd8|sum     ; |ALU|nBitAdder:A8|fullAdder:fullAdd8|sum     ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd8|cout~1  ; |ALU|nBitAdder:A8|fullAdder:fullAdd8|cout~1  ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd7|sum     ; |ALU|nBitAdder:A8|fullAdder:fullAdd7|sum     ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd7|cout~1  ; |ALU|nBitAdder:A8|fullAdder:fullAdd7|cout~1  ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd6|sum     ; |ALU|nBitAdder:A8|fullAdder:fullAdd6|sum     ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd6|cout~1  ; |ALU|nBitAdder:A8|fullAdder:fullAdd6|cout~1  ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd5|sum     ; |ALU|nBitAdder:A8|fullAdder:fullAdd5|sum     ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd5|cout~1  ; |ALU|nBitAdder:A8|fullAdder:fullAdd5|cout~1  ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd4|sum     ; |ALU|nBitAdder:A8|fullAdder:fullAdd4|sum     ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd4|cout~1  ; |ALU|nBitAdder:A8|fullAdder:fullAdd4|cout~1  ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd3|sum     ; |ALU|nBitAdder:A8|fullAdder:fullAdd3|sum     ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd3|cout~1  ; |ALU|nBitAdder:A8|fullAdder:fullAdd3|cout~1  ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd2|sum     ; |ALU|nBitAdder:A8|fullAdder:fullAdd2|sum     ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd2|cout~1  ; |ALU|nBitAdder:A8|fullAdder:fullAdd2|cout~1  ; out0             ;
+; |ALU|XR:A6|output[0]                         ; |ALU|XR:A6|output[0]                         ; out0             ;
+; |ALU|XR:A6|output[1]                         ; |ALU|XR:A6|output[1]                         ; out0             ;
+; |ALU|XR:A6|output[2]                         ; |ALU|XR:A6|output[2]                         ; out0             ;
+; |ALU|XR:A6|output[3]                         ; |ALU|XR:A6|output[3]                         ; out0             ;
+; |ALU|XR:A6|output[4]                         ; |ALU|XR:A6|output[4]                         ; out0             ;
+; |ALU|XR:A6|output[5]                         ; |ALU|XR:A6|output[5]                         ; out0             ;
+; |ALU|XR:A6|output[6]                         ; |ALU|XR:A6|output[6]                         ; out0             ;
+; |ALU|XR:A6|output[7]                         ; |ALU|XR:A6|output[7]                         ; out0             ;
+; |ALU|XR:A6|output[8]                         ; |ALU|XR:A6|output[8]                         ; out0             ;
+; |ALU|XR:A6|output[9]                         ; |ALU|XR:A6|output[9]                         ; out0             ;
+; |ALU|XR:A6|output[10]                        ; |ALU|XR:A6|output[10]                        ; out0             ;
+; |ALU|XR:A6|output[11]                        ; |ALU|XR:A6|output[11]                        ; out0             ;
+; |ALU|XR:A6|output[12]                        ; |ALU|XR:A6|output[12]                        ; out0             ;
+; |ALU|XR:A6|output[13]                        ; |ALU|XR:A6|output[13]                        ; out0             ;
+; |ALU|XR:A6|output[14]                        ; |ALU|XR:A6|output[14]                        ; out0             ;
+; |ALU|XR:A6|output[15]                        ; |ALU|XR:A6|output[15]                        ; out0             ;
+; |ALU|nBitAdder:A5|Overflow                   ; |ALU|nBitAdder:A5|Overflow                   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd16|sum~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd16|sum~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd16|sum    ; |ALU|nBitAdder:A5|fullAdder:fullAdd16|sum    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd16|cout~0 ; |ALU|nBitAdder:A5|fullAdder:fullAdd16|cout~0 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd16|cout~1 ; |ALU|nBitAdder:A5|fullAdder:fullAdd16|cout~1 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd16|cout   ; |ALU|nBitAdder:A5|fullAdder:fullAdd16|cout   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd15|sum~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd15|sum~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd15|sum    ; |ALU|nBitAdder:A5|fullAdder:fullAdd15|sum    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd15|cout~0 ; |ALU|nBitAdder:A5|fullAdder:fullAdd15|cout~0 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd15|cout~1 ; |ALU|nBitAdder:A5|fullAdder:fullAdd15|cout~1 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd15|cout   ; |ALU|nBitAdder:A5|fullAdder:fullAdd15|cout   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd14|sum~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd14|sum~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd14|sum    ; |ALU|nBitAdder:A5|fullAdder:fullAdd14|sum    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd14|cout~0 ; |ALU|nBitAdder:A5|fullAdder:fullAdd14|cout~0 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd14|cout~1 ; |ALU|nBitAdder:A5|fullAdder:fullAdd14|cout~1 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd14|cout   ; |ALU|nBitAdder:A5|fullAdder:fullAdd14|cout   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd13|sum~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd13|sum~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd13|sum    ; |ALU|nBitAdder:A5|fullAdder:fullAdd13|sum    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd13|cout~0 ; |ALU|nBitAdder:A5|fullAdder:fullAdd13|cout~0 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd13|cout~1 ; |ALU|nBitAdder:A5|fullAdder:fullAdd13|cout~1 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd13|cout   ; |ALU|nBitAdder:A5|fullAdder:fullAdd13|cout   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd12|sum~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd12|sum~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd12|sum    ; |ALU|nBitAdder:A5|fullAdder:fullAdd12|sum    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd12|cout~0 ; |ALU|nBitAdder:A5|fullAdder:fullAdd12|cout~0 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd12|cout~1 ; |ALU|nBitAdder:A5|fullAdder:fullAdd12|cout~1 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd12|cout   ; |ALU|nBitAdder:A5|fullAdder:fullAdd12|cout   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd11|sum~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd11|sum~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd11|sum    ; |ALU|nBitAdder:A5|fullAdder:fullAdd11|sum    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd11|cout~0 ; |ALU|nBitAdder:A5|fullAdder:fullAdd11|cout~0 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd11|cout~1 ; |ALU|nBitAdder:A5|fullAdder:fullAdd11|cout~1 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd11|cout   ; |ALU|nBitAdder:A5|fullAdder:fullAdd11|cout   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd10|sum~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd10|sum~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd10|sum    ; |ALU|nBitAdder:A5|fullAdder:fullAdd10|sum    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd10|cout~0 ; |ALU|nBitAdder:A5|fullAdder:fullAdd10|cout~0 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd10|cout~1 ; |ALU|nBitAdder:A5|fullAdder:fullAdd10|cout~1 ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd10|cout   ; |ALU|nBitAdder:A5|fullAdder:fullAdd10|cout   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd9|sum~0   ; |ALU|nBitAdder:A5|fullAdder:fullAdd9|sum~0   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd9|sum     ; |ALU|nBitAdder:A5|fullAdder:fullAdd9|sum     ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd9|cout~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd9|cout~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd9|cout~1  ; |ALU|nBitAdder:A5|fullAdder:fullAdd9|cout~1  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd9|cout    ; |ALU|nBitAdder:A5|fullAdder:fullAdd9|cout    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd8|sum~0   ; |ALU|nBitAdder:A5|fullAdder:fullAdd8|sum~0   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd8|sum     ; |ALU|nBitAdder:A5|fullAdder:fullAdd8|sum     ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd8|cout~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd8|cout~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd8|cout~1  ; |ALU|nBitAdder:A5|fullAdder:fullAdd8|cout~1  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd8|cout    ; |ALU|nBitAdder:A5|fullAdder:fullAdd8|cout    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd7|sum~0   ; |ALU|nBitAdder:A5|fullAdder:fullAdd7|sum~0   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd7|sum     ; |ALU|nBitAdder:A5|fullAdder:fullAdd7|sum     ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd7|cout~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd7|cout~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd7|cout~1  ; |ALU|nBitAdder:A5|fullAdder:fullAdd7|cout~1  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd7|cout    ; |ALU|nBitAdder:A5|fullAdder:fullAdd7|cout    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd6|sum~0   ; |ALU|nBitAdder:A5|fullAdder:fullAdd6|sum~0   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd6|sum     ; |ALU|nBitAdder:A5|fullAdder:fullAdd6|sum     ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd6|cout~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd6|cout~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd6|cout~1  ; |ALU|nBitAdder:A5|fullAdder:fullAdd6|cout~1  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd6|cout    ; |ALU|nBitAdder:A5|fullAdder:fullAdd6|cout    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd5|sum~0   ; |ALU|nBitAdder:A5|fullAdder:fullAdd5|sum~0   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd5|sum     ; |ALU|nBitAdder:A5|fullAdder:fullAdd5|sum     ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd5|cout~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd5|cout~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd5|cout~1  ; |ALU|nBitAdder:A5|fullAdder:fullAdd5|cout~1  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd5|cout    ; |ALU|nBitAdder:A5|fullAdder:fullAdd5|cout    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd4|sum~0   ; |ALU|nBitAdder:A5|fullAdder:fullAdd4|sum~0   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd4|sum     ; |ALU|nBitAdder:A5|fullAdder:fullAdd4|sum     ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd4|cout~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd4|cout~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd4|cout~1  ; |ALU|nBitAdder:A5|fullAdder:fullAdd4|cout~1  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd4|cout    ; |ALU|nBitAdder:A5|fullAdder:fullAdd4|cout    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd3|sum~0   ; |ALU|nBitAdder:A5|fullAdder:fullAdd3|sum~0   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd3|sum     ; |ALU|nBitAdder:A5|fullAdder:fullAdd3|sum     ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd3|cout~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd3|cout~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd3|cout~1  ; |ALU|nBitAdder:A5|fullAdder:fullAdd3|cout~1  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd3|cout    ; |ALU|nBitAdder:A5|fullAdder:fullAdd3|cout    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd2|sum~0   ; |ALU|nBitAdder:A5|fullAdder:fullAdd2|sum~0   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd2|sum     ; |ALU|nBitAdder:A5|fullAdder:fullAdd2|sum     ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd2|cout~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd2|cout~0  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd2|cout~1  ; |ALU|nBitAdder:A5|fullAdder:fullAdd2|cout~1  ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd2|cout    ; |ALU|nBitAdder:A5|fullAdder:fullAdd2|cout    ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd1|sum~0   ; |ALU|nBitAdder:A5|fullAdder:fullAdd1|sum~0   ; out0             ;
+; |ALU|nBitAdder:A5|fullAdder:fullAdd1|cout~0  ; |ALU|nBitAdder:A5|fullAdder:fullAdd1|cout~0  ; out0             ;
+; |ALU|nBitAdder:A2|Overflow                   ; |ALU|nBitAdder:A2|Overflow                   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd16|sum~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd16|sum~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd16|sum    ; |ALU|nBitAdder:A2|fullAdder:fullAdd16|sum    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd16|cout~0 ; |ALU|nBitAdder:A2|fullAdder:fullAdd16|cout~0 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd16|cout~1 ; |ALU|nBitAdder:A2|fullAdder:fullAdd16|cout~1 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd16|cout   ; |ALU|nBitAdder:A2|fullAdder:fullAdd16|cout   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd15|sum~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd15|sum~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd15|sum    ; |ALU|nBitAdder:A2|fullAdder:fullAdd15|sum    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd15|cout~0 ; |ALU|nBitAdder:A2|fullAdder:fullAdd15|cout~0 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd15|cout~1 ; |ALU|nBitAdder:A2|fullAdder:fullAdd15|cout~1 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd15|cout   ; |ALU|nBitAdder:A2|fullAdder:fullAdd15|cout   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd14|sum~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd14|sum~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd14|sum    ; |ALU|nBitAdder:A2|fullAdder:fullAdd14|sum    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd14|cout~0 ; |ALU|nBitAdder:A2|fullAdder:fullAdd14|cout~0 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd14|cout~1 ; |ALU|nBitAdder:A2|fullAdder:fullAdd14|cout~1 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd14|cout   ; |ALU|nBitAdder:A2|fullAdder:fullAdd14|cout   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd13|sum~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd13|sum~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd13|sum    ; |ALU|nBitAdder:A2|fullAdder:fullAdd13|sum    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd13|cout~0 ; |ALU|nBitAdder:A2|fullAdder:fullAdd13|cout~0 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd13|cout~1 ; |ALU|nBitAdder:A2|fullAdder:fullAdd13|cout~1 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd13|cout   ; |ALU|nBitAdder:A2|fullAdder:fullAdd13|cout   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd12|sum~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd12|sum~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd12|sum    ; |ALU|nBitAdder:A2|fullAdder:fullAdd12|sum    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd12|cout~0 ; |ALU|nBitAdder:A2|fullAdder:fullAdd12|cout~0 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd12|cout~1 ; |ALU|nBitAdder:A2|fullAdder:fullAdd12|cout~1 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd12|cout   ; |ALU|nBitAdder:A2|fullAdder:fullAdd12|cout   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd11|sum~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd11|sum~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd11|sum    ; |ALU|nBitAdder:A2|fullAdder:fullAdd11|sum    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd11|cout~0 ; |ALU|nBitAdder:A2|fullAdder:fullAdd11|cout~0 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd11|cout~1 ; |ALU|nBitAdder:A2|fullAdder:fullAdd11|cout~1 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd11|cout   ; |ALU|nBitAdder:A2|fullAdder:fullAdd11|cout   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd10|sum~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd10|sum~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd10|sum    ; |ALU|nBitAdder:A2|fullAdder:fullAdd10|sum    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd10|cout~0 ; |ALU|nBitAdder:A2|fullAdder:fullAdd10|cout~0 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd10|cout~1 ; |ALU|nBitAdder:A2|fullAdder:fullAdd10|cout~1 ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd10|cout   ; |ALU|nBitAdder:A2|fullAdder:fullAdd10|cout   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd9|sum~0   ; |ALU|nBitAdder:A2|fullAdder:fullAdd9|sum~0   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd9|sum     ; |ALU|nBitAdder:A2|fullAdder:fullAdd9|sum     ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd9|cout~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd9|cout~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd9|cout~1  ; |ALU|nBitAdder:A2|fullAdder:fullAdd9|cout~1  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd9|cout    ; |ALU|nBitAdder:A2|fullAdder:fullAdd9|cout    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd8|sum~0   ; |ALU|nBitAdder:A2|fullAdder:fullAdd8|sum~0   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd8|sum     ; |ALU|nBitAdder:A2|fullAdder:fullAdd8|sum     ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd8|cout~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd8|cout~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd8|cout~1  ; |ALU|nBitAdder:A2|fullAdder:fullAdd8|cout~1  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd8|cout    ; |ALU|nBitAdder:A2|fullAdder:fullAdd8|cout    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd7|sum~0   ; |ALU|nBitAdder:A2|fullAdder:fullAdd7|sum~0   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd7|sum     ; |ALU|nBitAdder:A2|fullAdder:fullAdd7|sum     ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd7|cout~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd7|cout~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd7|cout~1  ; |ALU|nBitAdder:A2|fullAdder:fullAdd7|cout~1  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd7|cout    ; |ALU|nBitAdder:A2|fullAdder:fullAdd7|cout    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd6|sum~0   ; |ALU|nBitAdder:A2|fullAdder:fullAdd6|sum~0   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd6|sum     ; |ALU|nBitAdder:A2|fullAdder:fullAdd6|sum     ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd6|cout~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd6|cout~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd6|cout~1  ; |ALU|nBitAdder:A2|fullAdder:fullAdd6|cout~1  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd6|cout    ; |ALU|nBitAdder:A2|fullAdder:fullAdd6|cout    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd5|sum~0   ; |ALU|nBitAdder:A2|fullAdder:fullAdd5|sum~0   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd5|sum     ; |ALU|nBitAdder:A2|fullAdder:fullAdd5|sum     ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd5|cout~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd5|cout~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd5|cout~1  ; |ALU|nBitAdder:A2|fullAdder:fullAdd5|cout~1  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd5|cout    ; |ALU|nBitAdder:A2|fullAdder:fullAdd5|cout    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd4|sum~0   ; |ALU|nBitAdder:A2|fullAdder:fullAdd4|sum~0   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd4|sum     ; |ALU|nBitAdder:A2|fullAdder:fullAdd4|sum     ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd4|cout~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd4|cout~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd4|cout~1  ; |ALU|nBitAdder:A2|fullAdder:fullAdd4|cout~1  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd4|cout    ; |ALU|nBitAdder:A2|fullAdder:fullAdd4|cout    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd3|sum~0   ; |ALU|nBitAdder:A2|fullAdder:fullAdd3|sum~0   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd3|sum     ; |ALU|nBitAdder:A2|fullAdder:fullAdd3|sum     ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd3|cout~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd3|cout~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd3|cout~1  ; |ALU|nBitAdder:A2|fullAdder:fullAdd3|cout~1  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd3|cout    ; |ALU|nBitAdder:A2|fullAdder:fullAdd3|cout    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd2|sum~0   ; |ALU|nBitAdder:A2|fullAdder:fullAdd2|sum~0   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd2|sum     ; |ALU|nBitAdder:A2|fullAdder:fullAdd2|sum     ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd2|cout~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd2|cout~0  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd2|cout~1  ; |ALU|nBitAdder:A2|fullAdder:fullAdd2|cout~1  ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd2|cout    ; |ALU|nBitAdder:A2|fullAdder:fullAdd2|cout    ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd1|sum~0   ; |ALU|nBitAdder:A2|fullAdder:fullAdd1|sum~0   ; out0             ;
+; |ALU|nBitAdder:A2|fullAdder:fullAdd1|cout~0  ; |ALU|nBitAdder:A2|fullAdder:fullAdd1|cout~0  ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd16|sum    ; |ALU|nBitAdder:A1|fullAdder:fullAdd16|sum    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd16|cout~1 ; |ALU|nBitAdder:A1|fullAdder:fullAdd16|cout~1 ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd15|sum    ; |ALU|nBitAdder:A1|fullAdder:fullAdd15|sum    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd15|cout~1 ; |ALU|nBitAdder:A1|fullAdder:fullAdd15|cout~1 ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd14|sum    ; |ALU|nBitAdder:A1|fullAdder:fullAdd14|sum    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd14|cout~1 ; |ALU|nBitAdder:A1|fullAdder:fullAdd14|cout~1 ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd13|sum    ; |ALU|nBitAdder:A1|fullAdder:fullAdd13|sum    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd13|cout~1 ; |ALU|nBitAdder:A1|fullAdder:fullAdd13|cout~1 ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd12|sum    ; |ALU|nBitAdder:A1|fullAdder:fullAdd12|sum    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd12|cout~1 ; |ALU|nBitAdder:A1|fullAdder:fullAdd12|cout~1 ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd11|sum    ; |ALU|nBitAdder:A1|fullAdder:fullAdd11|sum    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd11|cout~1 ; |ALU|nBitAdder:A1|fullAdder:fullAdd11|cout~1 ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd10|sum    ; |ALU|nBitAdder:A1|fullAdder:fullAdd10|sum    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd10|cout~1 ; |ALU|nBitAdder:A1|fullAdder:fullAdd10|cout~1 ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd10|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd10|cout   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd9|sum     ; |ALU|nBitAdder:A1|fullAdder:fullAdd9|sum     ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd9|cout~1  ; |ALU|nBitAdder:A1|fullAdder:fullAdd9|cout~1  ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd9|cout    ; |ALU|nBitAdder:A1|fullAdder:fullAdd9|cout    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd8|sum     ; |ALU|nBitAdder:A1|fullAdder:fullAdd8|sum     ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd8|cout~1  ; |ALU|nBitAdder:A1|fullAdder:fullAdd8|cout~1  ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd8|cout    ; |ALU|nBitAdder:A1|fullAdder:fullAdd8|cout    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd7|sum     ; |ALU|nBitAdder:A1|fullAdder:fullAdd7|sum     ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd7|cout~1  ; |ALU|nBitAdder:A1|fullAdder:fullAdd7|cout~1  ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd7|cout    ; |ALU|nBitAdder:A1|fullAdder:fullAdd7|cout    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd6|sum     ; |ALU|nBitAdder:A1|fullAdder:fullAdd6|sum     ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd6|cout~1  ; |ALU|nBitAdder:A1|fullAdder:fullAdd6|cout~1  ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd6|cout    ; |ALU|nBitAdder:A1|fullAdder:fullAdd6|cout    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd5|sum     ; |ALU|nBitAdder:A1|fullAdder:fullAdd5|sum     ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd5|cout~1  ; |ALU|nBitAdder:A1|fullAdder:fullAdd5|cout~1  ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd5|cout    ; |ALU|nBitAdder:A1|fullAdder:fullAdd5|cout    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd4|sum     ; |ALU|nBitAdder:A1|fullAdder:fullAdd4|sum     ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd4|cout~1  ; |ALU|nBitAdder:A1|fullAdder:fullAdd4|cout~1  ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd4|cout    ; |ALU|nBitAdder:A1|fullAdder:fullAdd4|cout    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd3|sum     ; |ALU|nBitAdder:A1|fullAdder:fullAdd3|sum     ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd3|cout~1  ; |ALU|nBitAdder:A1|fullAdder:fullAdd3|cout~1  ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd3|cout    ; |ALU|nBitAdder:A1|fullAdder:fullAdd3|cout    ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd2|sum     ; |ALU|nBitAdder:A1|fullAdder:fullAdd2|sum     ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd2|cout~1  ; |ALU|nBitAdder:A1|fullAdder:fullAdd2|cout~1  ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd2|cout    ; |ALU|nBitAdder:A1|fullAdder:fullAdd2|cout    ; out0             ;
+; |ALU|Add0~0                                  ; |ALU|Add0~0                                  ; out0             ;
+; |ALU|Add0~1                                  ; |ALU|Add0~1                                  ; out0             ;
+; |ALU|Add0~2                                  ; |ALU|Add0~2                                  ; out0             ;
+; |ALU|Add0~3                                  ; |ALU|Add0~3                                  ; out0             ;
+; |ALU|Add0~4                                  ; |ALU|Add0~4                                  ; out0             ;
+; |ALU|Add0~5                                  ; |ALU|Add0~5                                  ; out0             ;
+; |ALU|Add0~6                                  ; |ALU|Add0~6                                  ; out0             ;
+; |ALU|Add0~7                                  ; |ALU|Add0~7                                  ; out0             ;
+; |ALU|Add0~8                                  ; |ALU|Add0~8                                  ; out0             ;
+; |ALU|Add0~9                                  ; |ALU|Add0~9                                  ; out0             ;
+; |ALU|Add0~10                                 ; |ALU|Add0~10                                 ; out0             ;
+; |ALU|Add0~11                                 ; |ALU|Add0~11                                 ; out0             ;
+; |ALU|Add0~12                                 ; |ALU|Add0~12                                 ; out0             ;
+; |ALU|Add0~14                                 ; |ALU|Add0~14                                 ; out0             ;
+; |ALU|Add0~16                                 ; |ALU|Add0~16                                 ; out0             ;
+; |ALU|Add0~18                                 ; |ALU|Add0~18                                 ; out0             ;
+; |ALU|Add0~20                                 ; |ALU|Add0~20                                 ; out0             ;
+; |ALU|Add0~22                                 ; |ALU|Add0~22                                 ; out0             ;
+; |ALU|Add0~24                                 ; |ALU|Add0~24                                 ; out0             ;
+; |ALU|Add0~26                                 ; |ALU|Add0~26                                 ; out0             ;
+; |ALU|Add0~28                                 ; |ALU|Add0~28                                 ; out0             ;
+; |ALU|Equal0~0                                ; |ALU|Equal0~0                                ; out0             ;
+; |ALU|Equal1~0                                ; |ALU|Equal1~0                                ; out0             ;
+; |ALU|Equal2~0                                ; |ALU|Equal2~0                                ; out0             ;
+; |ALU|Equal3~0                                ; |ALU|Equal3~0                                ; out0             ;
+; |ALU|MP:A9|Equal0~0                          ; |ALU|MP:A9|Equal0~0                          ; out0             ;
+; |ALU|MP:A9|Equal1~0                          ; |ALU|MP:A9|Equal1~0                          ; out0             ;
+; |ALU|MP:A9|Equal2~0                          ; |ALU|MP:A9|Equal2~0                          ; out0             ;
+; |ALU|MP:A9|Equal3~0                          ; |ALU|MP:A9|Equal3~0                          ; out0             ;
+; |ALU|MP:A9|Equal4~0                          ; |ALU|MP:A9|Equal4~0                          ; out0             ;
+; |ALU|MP:A9|Equal5~0                          ; |ALU|MP:A9|Equal5~0                          ; out0             ;
+; |ALU|MP:A9|Equal6~0                          ; |ALU|MP:A9|Equal6~0                          ; out0             ;
+; |ALU|MP:A9|Equal7~0                          ; |ALU|MP:A9|Equal7~0                          ; out0             ;
+; |ALU|nBitAdder:A5|Equal0~0                   ; |ALU|nBitAdder:A5|Equal0~0                   ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |ALU|zero~0                                  ; |ALU|zero~0                                  ; out              ;
+; |ALU|zero~2                                  ; |ALU|zero~2                                  ; out              ;
+; |ALU|zero~4                                  ; |ALU|zero~4                                  ; out              ;
+; |ALU|zero~6                                  ; |ALU|zero~6                                  ; out              ;
+; |ALU|zero                                    ; |ALU|zero                                    ; pin_out          ;
+; |ALU|nBitAdder:A8|Overflow                   ; |ALU|nBitAdder:A8|Overflow                   ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd16|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd16|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd15|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd15|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd14|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd14|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd13|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd13|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd12|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd12|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd11|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd11|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd10|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd10|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd9|cout~1  ; |ALU|nBitAdder:A8|fullAdder:fullAdd9|cout~1  ; out0             ;
+; |ALU|nBitAdder:A1|Overflow                   ; |ALU|nBitAdder:A1|Overflow                   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd16|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd16|cout   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd15|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd15|cout   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd14|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd14|cout   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd13|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd13|cout   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd12|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd12|cout   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd11|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd11|cout   ; out0             ;
+; |ALU|Add0~13                                 ; |ALU|Add0~13                                 ; out0             ;
+; |ALU|Add0~15                                 ; |ALU|Add0~15                                 ; out0             ;
+; |ALU|Add0~17                                 ; |ALU|Add0~17                                 ; out0             ;
+; |ALU|Add0~19                                 ; |ALU|Add0~19                                 ; out0             ;
+; |ALU|Add0~21                                 ; |ALU|Add0~21                                 ; out0             ;
+; |ALU|Add0~23                                 ; |ALU|Add0~23                                 ; out0             ;
+; |ALU|Add0~25                                 ; |ALU|Add0~25                                 ; out0             ;
+; |ALU|Add0~27                                 ; |ALU|Add0~27                                 ; out0             ;
+; |ALU|nBitAdder:A8|Equal0~0                   ; |ALU|nBitAdder:A8|Equal0~0                   ; out0             ;
+; |ALU|nBitAdder:A2|Equal0~0                   ; |ALU|nBitAdder:A2|Equal0~0                   ; out0             ;
+; |ALU|nBitAdder:A1|Equal0~0                   ; |ALU|nBitAdder:A1|Equal0~0                   ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |ALU|zero~0                                  ; |ALU|zero~0                                  ; out              ;
+; |ALU|zero~2                                  ; |ALU|zero~2                                  ; out              ;
+; |ALU|zero~4                                  ; |ALU|zero~4                                  ; out              ;
+; |ALU|nBitAdder:A8|Overflow                   ; |ALU|nBitAdder:A8|Overflow                   ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd16|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd16|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd15|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd15|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd14|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd14|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd13|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd13|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd12|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd12|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd11|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd11|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd10|cout~1 ; |ALU|nBitAdder:A8|fullAdder:fullAdd10|cout~1 ; out0             ;
+; |ALU|nBitAdder:A8|fullAdder:fullAdd9|cout~1  ; |ALU|nBitAdder:A8|fullAdder:fullAdd9|cout~1  ; out0             ;
+; |ALU|nBitAdder:A1|Overflow                   ; |ALU|nBitAdder:A1|Overflow                   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd16|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd16|cout   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd15|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd15|cout   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd14|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd14|cout   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd13|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd13|cout   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd12|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd12|cout   ; out0             ;
+; |ALU|nBitAdder:A1|fullAdder:fullAdd11|cout   ; |ALU|nBitAdder:A1|fullAdder:fullAdd11|cout   ; out0             ;
+; |ALU|Add0~13                                 ; |ALU|Add0~13                                 ; out0             ;
+; |ALU|Add0~15                                 ; |ALU|Add0~15                                 ; out0             ;
+; |ALU|Add0~17                                 ; |ALU|Add0~17                                 ; out0             ;
+; |ALU|Add0~19                                 ; |ALU|Add0~19                                 ; out0             ;
+; |ALU|Add0~21                                 ; |ALU|Add0~21                                 ; out0             ;
+; |ALU|Add0~23                                 ; |ALU|Add0~23                                 ; out0             ;
+; |ALU|Add0~25                                 ; |ALU|Add0~25                                 ; out0             ;
+; |ALU|Add0~27                                 ; |ALU|Add0~27                                 ; out0             ;
+; |ALU|nBitAdder:A8|Equal0~0                   ; |ALU|nBitAdder:A8|Equal0~0                   ; out0             ;
+; |ALU|nBitAdder:A2|Equal0~0                   ; |ALU|nBitAdder:A2|Equal0~0                   ; out0             ;
+; |ALU|nBitAdder:A1|Equal0~0                   ; |ALU|nBitAdder:A1|Equal0~0                   ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Aug 07 16:06:46 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off task7 -c task7
+Info: Using vector source file "C:/Users/orga01.CED/Desktop/task7Smadi/taskNew7.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      93.56 %
+Info: Number of transitions in simulation is 68667
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 143 megabytes
+    Info: Processing ended: Sun Aug 07 16:06:46 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

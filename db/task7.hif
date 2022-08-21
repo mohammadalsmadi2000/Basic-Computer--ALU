@@ -1,0 +1,423 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+fullAdder
+# storage
+db|task7.(2).cnf
+db|task7.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fulladder.vhd
+bb767e168ad0313660f599a1aa3056c8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+nBitAdder:A1|fullAdder:fullAdd1
+nBitAdder:A1|fullAdder:fullAdd2
+nBitAdder:A1|fullAdder:fullAdd3
+nBitAdder:A1|fullAdder:fullAdd4
+nBitAdder:A1|fullAdder:fullAdd5
+nBitAdder:A1|fullAdder:fullAdd6
+nBitAdder:A1|fullAdder:fullAdd7
+nBitAdder:A1|fullAdder:fullAdd8
+nBitAdder:A1|fullAdder:fullAdd9
+nBitAdder:A1|fullAdder:fullAdd10
+nBitAdder:A1|fullAdder:fullAdd11
+nBitAdder:A1|fullAdder:fullAdd12
+nBitAdder:A1|fullAdder:fullAdd13
+nBitAdder:A1|fullAdder:fullAdd14
+nBitAdder:A1|fullAdder:fullAdd15
+nBitAdder:A1|fullAdder:fullAdd16
+nBitAdder:A2|fullAdder:fullAdd1
+nBitAdder:A2|fullAdder:fullAdd2
+nBitAdder:A2|fullAdder:fullAdd3
+nBitAdder:A2|fullAdder:fullAdd4
+nBitAdder:A2|fullAdder:fullAdd5
+nBitAdder:A2|fullAdder:fullAdd6
+nBitAdder:A2|fullAdder:fullAdd7
+nBitAdder:A2|fullAdder:fullAdd8
+nBitAdder:A2|fullAdder:fullAdd9
+nBitAdder:A2|fullAdder:fullAdd10
+nBitAdder:A2|fullAdder:fullAdd11
+nBitAdder:A2|fullAdder:fullAdd12
+nBitAdder:A2|fullAdder:fullAdd13
+nBitAdder:A2|fullAdder:fullAdd14
+nBitAdder:A2|fullAdder:fullAdd15
+nBitAdder:A2|fullAdder:fullAdd16
+nBitAdder:A5|fullAdder:fullAdd1
+nBitAdder:A5|fullAdder:fullAdd2
+nBitAdder:A5|fullAdder:fullAdd3
+nBitAdder:A5|fullAdder:fullAdd4
+nBitAdder:A5|fullAdder:fullAdd5
+nBitAdder:A5|fullAdder:fullAdd6
+nBitAdder:A5|fullAdder:fullAdd7
+nBitAdder:A5|fullAdder:fullAdd8
+nBitAdder:A5|fullAdder:fullAdd9
+nBitAdder:A5|fullAdder:fullAdd10
+nBitAdder:A5|fullAdder:fullAdd11
+nBitAdder:A5|fullAdder:fullAdd12
+nBitAdder:A5|fullAdder:fullAdd13
+nBitAdder:A5|fullAdder:fullAdd14
+nBitAdder:A5|fullAdder:fullAdd15
+nBitAdder:A5|fullAdder:fullAdd16
+nBitAdder:A8|fullAdder:fullAdd1
+nBitAdder:A8|fullAdder:fullAdd2
+nBitAdder:A8|fullAdder:fullAdd3
+nBitAdder:A8|fullAdder:fullAdd4
+nBitAdder:A8|fullAdder:fullAdd5
+nBitAdder:A8|fullAdder:fullAdd6
+nBitAdder:A8|fullAdder:fullAdd7
+nBitAdder:A8|fullAdder:fullAdd8
+nBitAdder:A8|fullAdder:fullAdd9
+nBitAdder:A8|fullAdder:fullAdd10
+nBitAdder:A8|fullAdder:fullAdd11
+nBitAdder:A8|fullAdder:fullAdd12
+nBitAdder:A8|fullAdder:fullAdd13
+nBitAdder:A8|fullAdder:fullAdd14
+nBitAdder:A8|fullAdder:fullAdd15
+nBitAdder:A8|fullAdder:fullAdd16
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+SL
+# storage
+db|task7.(3).cnf
+db|task7.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sl.vhd
+f5af1feda7b46c39351f5dd258ef7a3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+SL:A3
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+SR
+# storage
+db|task7.(4).cnf
+db|task7.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sr.vhd
+945a22758e3018fd7bcc8a9bdae5b60
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+SR:A4
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+XR
+# storage
+db|task7.(5).cnf
+db|task7.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+xr.vhd
+ace76282622a31ef0f348cbc6886f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(b)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+XR:A6
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+C
+# storage
+db|task7.(6).cnf
+db|task7.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+c.vhd
+f265bab6867338b0475bb4e948fb0fd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+C:A7
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+nBitAdder
+# storage
+db|task7.(0).cnf
+db|task7.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+nbitadder.vhd
+84e2f2dc8be03b86a964a43ffd44ac0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+cp.vhd
+e77efa8f65f82f12106a63b5bc45cf98
+}
+# hierarchies {
+nBitAdder:A1
+nBitAdder:A2
+nBitAdder:A5
+nBitAdder:A8
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ALU
+# storage
+db|task7.(1).cnf
+db|task7.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu.vhd
+d9da7e2e3d6a3dfa832327f23bd3a23
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+cp.vhd
+e77efa8f65f82f12106a63b5bc45cf98
+}
+# hierarchies {
+|
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+MP
+# storage
+db|task7.(7).cnf
+db|task7.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mp.vhd
+2ae8fd8845fb616cd553f50a78dc237
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(input)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(alu_op)
+2 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+cp.vhd
+e77efa8f65f82f12106a63b5bc45cf98
+}
+# hierarchies {
+MP:A9
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+
